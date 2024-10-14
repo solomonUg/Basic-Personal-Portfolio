@@ -15,14 +15,14 @@
   </head>
   <body>
     <main>
-      <div class="hero-section">
+      <div class="hero-section" id="home">
         <div class="intro">
           <h3><span class="hello">Hello</span> 👋 I'm</h3>
           <h1>Solomon Ugwu 😎.</h1>
           <h3>A Creative Software Engineer🙌</h3>
           <div class="btns">
             <button class="cv-btn">Download CV</button>
-            <button class="letsTalk-btn">Let's Talk</button>
+            <a href="#contact-me"><button class="letsTalk-btn">Let's Talk</button></a>
           </div>
           <div class="socials">
             <i class="fa-brands fa-github"></i>
@@ -35,7 +35,7 @@
         </div>
       </div>
 
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <div class="about-me-wrapper">
           <p class="get-to-know">Get to Know</p>
           <p class="about-solo">About Solomon</p>
@@ -94,7 +94,7 @@
         </div>
       </section>
 
-      <secition class="work-experience">
+      <secition class="work-experience" id="work-experience">
         <p class="work-exp-sum">Summary of Work Experience</p>
         <p class="work-exp-text">Work Experience</p>
         <div class="wk-exp-container">
@@ -160,7 +160,7 @@
         </div>
       </secition>
 
-      <section class="past-works">
+      <section class="past-works" id="past-works">
         <div class="recent-work-text">My Recent Work</div>
         <div class="recent-work-title">Portfolio</div>
         <div class="recent-works-wrapper">
@@ -239,7 +239,7 @@
         </div>
       </section>
 
-      <section class="my-skills">
+      <section class="my-skills" id="skills">
           <div class="my-skills-text">
             <p class="what-skills">What Skills I Have</p>
             <p class="what-skills-bold">Skills</p>
@@ -270,20 +270,66 @@
 
       </section>
 
-      <section class="contact-me">
-        <div class="my-skills-text">
-          <p class="what-skills">What Skills I Have</p>
-          <p class="what-skills-bold">Skills</p>
+      <section class="contact-me" id="contact-me" >
+        <div class="contactme-text">
+          <p class="get-in-touch">Get In Touch</p>
+          <p class="contact-me-bold">Contact Me</p>
         </div>
         <div class="contact-me-container">
           <div class="msg-socials">
-            
+            <div class="msg-card">
+              <i class="fa-regular fa-envelope"></i>
+              <p>Email</p>
+              <p class="sub">solomonchris700@gmail.com</p>
+              <a href="#">Send a Message</a>
+            </div>
+            <div class="msg-card">
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>WhatsApp</p>
+              <p class="sub">+234-90-339-45-204</p>
+              <a href="#">Send a Message</a>
+            </div>
+          </div>
+          <div class="form-area">
+            <form action="">
+              <input type="text" name="name" id="name" class="name" placeholder="Your Full Name"> <br>
+              <input type="email" name="email" id="email" placeholder="Your Email"> <br>
+              <textarea name="" id="" cols="30" rows="8" placeholder="Write Your Message..."></textarea> <br>
+              <input type="submit" value="Send Message" id="send-msg-btn">
+            </form>
           </div>
         </div>
       </section>
 
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-name">Solomon (Snow) Ugwu</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about-me">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#work-experience">Experience</a>
+          <a href="#past-works">Portfolio</a>
+          <a href="#contact-me">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="copyright">
+          &copy; solomon Ugwu. All rights reserved
+        </div>
+        <div class="fixed-bar">
+          <a href="#home"><div><i class="fa-solid fa-house"></i></div></a>
+          <a href="#about-me"><div><i class="fa-regular fa-user"></i></div></a>
+          <a href="#work-experience"><div><i class="fa-solid fa-briefcase"></i></div></a>
+          <a href="#skills"><div><i class="fa-solid fa-screwdriver-wrench"></i></div></a>
+          <a href="#contact-me"><div><i class="fa-regular fa-message"></i></div></a>
+        </div>
+      </div>
+
+    </footer>
   </body>
 </html>

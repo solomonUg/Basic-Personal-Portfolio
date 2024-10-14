@@ -69,6 +69,7 @@ h3 {
   font-size: 15px;
   outline: 0;
   border-radius: 10px;
+  cursor: pointer;
   border: 1px solid gold;
 }
 
@@ -187,7 +188,7 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
 .works-card1,
 .works-card2,
 .works-card3,
-.works-card4 {
+.works-card4, .msg-card {
   width: 250px;
   height: 170px;
   background-color: #161616;
@@ -204,7 +205,7 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
 .works-card1:hover,
 .works-card2:hover,
 .works-card3:hover,
-.works-card4:hover {
+.works-card4:hover, .msg-card:hover {
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid gold;
     transition: all 0.5s ease-in-out;
@@ -213,7 +214,7 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
 .works-card1 i,
 .works-card2 i,
 .works-card3 i,
-.works-card4 i {
+.works-card4 i, .msg-card i{
     color: gold;
     font-size: 20px;
 }
@@ -221,7 +222,7 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
 .works-card1 p,
 .works-card2 p,
 .works-card3 p,
-.works-card4 p {
+.works-card4 p, .msg-card p{
     font-weight: 500;
     color: white;
 }
@@ -446,12 +447,13 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
 
 }
 
-.what-skills {
+.what-skills, .get-in-touch {
   font-size: 13px;
   font-weight: 500;
+  color: white;
 }
 
-.what-skills-bold {
+.what-skills-bold , .contact-me-bold{
   font-size: 1.5rem;
   color: gold;
   font-weight: 600;
@@ -462,7 +464,7 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  background-color: #161616;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 30px 20px;
   border-radius: 25px;
 }
@@ -490,4 +492,184 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
 
 .skillsets .skill i {
   color: gold;
+}
+
+.contact-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactme-text {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contact-me-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.msg-card {
+  width: 270px;
+  height: 145px;
+
+}
+
+.msg-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.msg-socials .sub {
+  font-size: 0.9rem;
+}
+
+.msg-socials a {
+  text-decoration: none;
+  color: #f9aa23;
+  font-size: 0.8rem;
+}
+
+.form-area {
+  width: 55%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  border: 1px solid gold;
+  border-radius: 7px;
+  outline: none;
+  padding-left: 20px;
+  color: white;
+}
+
+
+textarea {
+width: 100%;
+background-color: transparent;
+border: 1px solid gold;
+outline: none;
+border-radius: 7px;
+padding: 20px;
+color: white;
+}
+
+#send-msg-btn {
+  width: 25%;
+  height: 43px;
+  color: black;
+  background-color: gold;
+  padding: 0;
+  font-weight: 500;
+}
+
+#send-msg-btn:hover {
+  background-color: white;
+}
+
+
+footer{
+  width: 100%;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-name {
+  font-weight: 500;
+  color: #161616;
+}
+
+.footer-wrapper {
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  color: #161616;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-socials i {
+  font-size: 35px;
+}
+
+.footer-socials i:hover {
+  color: white;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  margin-bottom: 100px;
+}
+
+.fixed-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom:  17px;
+  gap: 10px;
+  width: 25%;
+  height: 70px;
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.fixed-bar a  i {
+  font-size: 15px;
+  color: white;
+}
+
+.fixed-bar a {
+  text-decoration: none;
+  color: unset;
+}
+
+.fixed-bar div {
+  padding: 17px;
+  border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.fixed-bar div:active {
+  background-color: #f9aa23;
+}
+
+.fixed-bar div:hover {
+background-color: rgba(0, 0, 0, 0.7);
 }
