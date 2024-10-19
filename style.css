@@ -798,10 +798,16 @@ margin-top: 40px;
   width: 100%;
 }
 
+.about-me-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-me-btn .letsTalk-btn,
 .github-btn,
 .linkedIn-btn {
-  padding: 13px 8px;
+  padding: 13px 10px;
   font-size: 15px;
 }
 
