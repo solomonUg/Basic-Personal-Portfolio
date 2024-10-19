@@ -11,7 +11,7 @@ body {
 
 main {
   width: 100%;
-  background-image: url(assets/10861.jpg);
+  background-image: url(assets/10861.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -106,7 +106,7 @@ h3 {
   color: gold;
   position: absolute;
   right: 150px;
-  bottom: 250px;
+  bottom: 255px;
   font-size: 17px;
   transform: rotate(90deg);
 }
@@ -154,7 +154,6 @@ h3 {
 
 .portfolio-img {
     position: absolute;
-    background-color: azure;
     transform: rotate(-25deg);
     transition: all 0.5s ease-in-out;
 }
@@ -321,7 +320,7 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.5);
 .work-exp-card {
   border: 1px solid #f9aa23;
   border-radius: 13px;
-  height: 400px;
+  height: 450px;
 }
 
 .work-exp-card  .card-title {
@@ -778,31 +777,40 @@ margin-top: 40px;
 
   .cv-btn,
   .letsTalk-btn {
-    padding: 15px 30px;
+    padding: 15px 20px;
+  }
+
+  .portfolio-img, .background-card {
+    width: 260px;
+  height: 270px;
   }
 
   .works-card {
     align-items: center;
     justify-content: center;
+    gap: 10px;
   }
 
   .works-card1,
 .works-card2,
 .works-card3,
 .works-card4 {
-  width: 180px;
-  height: 150px;
+  width: 100%;
 }
 
-.letsTalk-btn,
+.about-me-btn .letsTalk-btn,
 .github-btn,
 .linkedIn-btn {
-  padding: 13px 14px;
+  padding: 13px 8px;
   font-size: 15px;
 }
 
+.live-demo-btn {
+  padding: 15px 70px;
+}
+
   #send-msg-btn {
-    width: 33%;
+    width: 35%;
   }
 
   .footer-links {
